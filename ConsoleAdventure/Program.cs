@@ -9,7 +9,14 @@ namespace ConsoleAdventure
         static void Main(string[] args)
         {
             model = new Model();
-            UpdateView();
+            while (true)
+            {
+                UpdateView();
+                Console.Write("Angi kommando: ");
+                var command = Console.ReadLine();
+                //if(command.StartsWith("Låse opp")) 
+                //if(command.StartsWith("Gå gjennom")) 
+            }
         }
 
         static void UpdateView()
